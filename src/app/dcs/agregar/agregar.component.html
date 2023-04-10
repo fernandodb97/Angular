@@ -1,0 +1,8 @@
+<form (ngSubmit)="agregar()">
+  {{nuevo.nombre}} // {{nuevo.tipo}} // {{nuevo.patente }}
+  <hr>
+    Nombre<input type="text" placeholder="nombre" name="nombre" [(ngModel)]="nuevo.nombre">
+    Tipo<input type="text" placeholder="tipo" name="tipo" [(ngModel)]="nuevo.tipo">
+    Patente<input type="number" placeholder="patente" name="patente" [(ngModel)]="nuevo.patente">
+  <button type="submit">Agregar Nave</button>
+</form>
