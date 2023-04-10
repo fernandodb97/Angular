@@ -1,8 +1,12 @@
+<!--FORMULARIO EN EL CUAL SE VAN A ENVIAR POR DIRECTIVA(ngSubmit) PARA SU USO EN .ts-->
 <form (ngSubmit)="agregar()">
   {{nuevo.nombre}} // {{nuevo.tipo}} // {{nuevo.patente }}
   <hr>
+
+    <!--CAMPOS QUE SERAN MODIFICADOS CON [(ngModel)] PARA SU ACTUALIZACION CONTINUA-->
     Nombre<input type="text" placeholder="nombre" name="nombre" [(ngModel)]="nuevo.nombre">
     Tipo<input type="text" placeholder="tipo" name="tipo" [(ngModel)]="nuevo.tipo">
     Patente<input type="number" placeholder="patente" name="patente" [(ngModel)]="nuevo.patente">
+  <!--BOTON QUE HACE LA MAGIA CON EL type="submit"-->
   <button type="submit">Agregar Nave</button>
 </form>

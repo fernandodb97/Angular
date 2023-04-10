@@ -1,30 +1,20 @@
 import { Component } from '@angular/core';
 import { Nave } from '../interfaces/dcs-interfaces';
+import { DcsService } from '../services/dcs.service';
 
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
 })
 export class MainComponent {
-  naves: Nave[] =[
-    {nombre: 'primera',
-    tipo:'f-16',
-    patente:0
-    },
-    {nombre: 'segunda',
-    tipo:'pillan',
-    patente:0
-    },
-    {nombre: 'tercera',
-    tipo:'f-5',
-    patente:0
-    }
-  ]
 
+  //OBJETO NAVE IMPORTADO POR interface CON VARIABLES INICIALIZADAS EN DEFECTO
   nuevo:Nave = {
     nombre: '',
     tipo:'',
     patente:0
   }
 
+  //PARA UTILIZAR LOS SERVICIOS DE DCS
+  constructor(private dcsService:DcsService){}
 }
