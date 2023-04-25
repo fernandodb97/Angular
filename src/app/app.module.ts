@@ -14,6 +14,8 @@ import { DcsModule } from './dcs/dcs.module';
   declarations: [
     AppComponent,
   ],
+
+  //EL MODULO PRINCIPAL IMPORTA TODOS LOS MODULOS "HIJOS" JUNTO A LOS PROPIOS QUE IMPORTEN FUNCIONES DE 3EROS 
   imports: [
 
     HeroesModule,
